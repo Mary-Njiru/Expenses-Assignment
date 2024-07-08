@@ -6,7 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+<!--    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:cardCornerRadius="8dp"-->
+<!--        app:cardElevation="8dp"-->
+<!--        >-->
 
 
 <ImageView
@@ -115,11 +126,11 @@
         android:id="@+id/tvTransactions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        android:text="TRANSACTIONS"
         app:layout_constraintStart_toEndOf="@+id/ivTransactions"
-        app:layout_constraintTop_toBottomOf="@+id/ivMoneyOut"
-        android="TRANSACTIONS" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/tvMoneyFour"
@@ -140,6 +151,8 @@
         android:layout_height="545dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivExpenses" />
 </androidx.constraintlayout.widget.ConstraintLayout>
